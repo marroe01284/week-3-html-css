@@ -3,6 +3,13 @@
 color: red;
 font-size: 28px;
 }
+/* pseudo-classes selector */
+a:hover {
+    background-color: yellow;
+    
+}
+
+
 /* tag selector */
 p {
     color: blue;
@@ -23,8 +30,66 @@ color: pink;
 article h2{
     color: aquamarine;
 }
+/* Child sellector ( parent > child) Matches an elemet that is an direct child of a specific element */
+ul > li {
+    list-style-type: square;
+}
+/*  General sibling selector */
+h2 ~ p {
+    background-color: blueviolet;
+}
+/* Sibling selector( element + element 2) it will select the element witch will follow another specific element immidiatly after */
+h2 + p {
+    background-color: brown;
+}
 
+/* Attribute selector */
+input[type="text"] {
+    color: black;
+    font-size: 18px;
+    border-color: blue;
+}
 
+input[type="submit"] {
+    color: brown;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    text-transform: uppercase;
+}
 
+/* pseudo-class selector */
+ul li:first-child {
+    background-color: lightcoral;
+}
 
+ul li:last-child {
+    background-color: lightcyan;
+}
 
+ul li:nth-child(2) {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Pseudo-elements ::before and ::after */
+p::before {
+    content: "🔥";
+    font-size: 24px;
+
+}
+
+p::after {
+    content: "💣";
+    font-size: 24px;
+}
+
+/* Grouping selector */
+
+h1, p {
+    font-family: fantasy, serif;
+}
+/* combining selecetor */
+p.dummy::first-letter {
+font-size: 76px;
+initial-letter: 2 10;
+}
