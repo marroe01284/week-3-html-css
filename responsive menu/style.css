@@ -1,0 +1,35 @@
+#desktop-section{
+    display: none;
+}
+h1 {
+    color: red;
+}
+/* Small */
+@media (min-width: 640px) {
+    #desktop-section{
+        display: block;
+    }
+    #mobile-section{
+        display: none;
+    }
+}
+/* medium */
+
+@media (min-width: 786px) {
+    h1{
+        color: green;
+    }
+}
+
+/* Large */
+@media (min-width: 1024px) {
+
+}
+/* X-large */
+@media (min-width: 1280) {
+
+}
+/* XX-large */
+@media (min-width: 1536){
+
+}
