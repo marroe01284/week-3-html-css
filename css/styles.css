@@ -1,0 +1,30 @@
+/* universal selector astrix witch is a star selects evrything */
+* {
+color: red;
+font-size: 28px;
+}
+/* tag selector */
+p {
+    color: blue;
+}
+/* class selecetor can be used multiple times */
+.highlight {
+    color: green;
+}
+/* id selector only use one time */
+#header {
+background-color: yellow;
+}
+/* Decendant selector */
+ article p {
+color: pink;
+}
+
+article h2{
+    color: aquamarine;
+}
+
+
+
+
+
