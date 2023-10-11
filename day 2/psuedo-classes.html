@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Psuedo Classes::</title>
+    <style>
+        button:hover {
+            background-color: red;
+        }
+        button:focus {
+            background-color: blue;
+        }
+
+    #email:disabled {
+        background-color: darkblue;
+    }
+
+    #name:required {
+        background-color: purple;
+    }
+
+    /* /* li:nth-child(even) {
+        color: green;
+        background-color: aqua;
+    }
+
+    li:nth-child(odd) {
+        color: blue;
+        background-color: red;
+    } */
+/* it selects every second child starting at 0 multiplied with 2. 2*0=0, 2*1=2 */
+    li:nth-child(2n){
+        color: green; 
+    }
+    /* if you want to skip the first one  */
+    li:nth-child(2n + 1) {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" disabled/>
+    </div>
+
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    </div>
+
+    <div>
+        <button type="submit" class="submit">
+            Click me to send me to heaven</button>
+
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+    </div>
+</body>
+</html>

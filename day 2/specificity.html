@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* ranking of importance or specificity 0, 1 ID, 0 CLASS,0 TAG  */
+        #header-id{
+            color: blue;
+        }
+        /* 0,0,1,0 */
+        .header {
+            color: green;
+            /* 0,0,0,1 */
+        }
+        h2 {
+            color: red;
+        }
+        /* 1,0,1,1 IMPORTANT IS the highest but dont use it  */
+        h2.header {
+            color: yellow !important;
+        }
+        /* 0,0,1,2 */
+        h2.header span {
+            color: red;
+        }
+        /* 0,1,0,1 */
+        #header-id span {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2 id="header-id" class="header">
+        <span> 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        </span>
+        </h2>
+    <p id="paragraph-id" class="paragraph"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique aliquid tempora doloribus laborum fuga natus, repudiandae reprehenderit in. Incidunt sunt vitae sequi modi facilis excepturi in numquam harum magni?
+    </p>
+</body>
+</html>
