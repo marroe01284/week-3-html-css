@@ -4,11 +4,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>::Responsive Menu::</title>
     <style>
-        
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    
+}
+        nav {
+            display: none;
+            background-color: black;
+            border-radius: 8px;
+        }
+        nav li {
+            padding: 8px 0;
+        }
+        nav li a:hover {
+            text-decoration: underline;
+        }
+        nav a {
+            color: white;
+            /* how to remove the underline */
+            text-decoration: none;
+            /* all CAP */
+            text-transform: capitalize;
+        }
+        label {
+            font-size: 38px;
+        }
+
+        #menu-checkbox:checked ~ nav {
+            display: block;
+        }
+        #menu-checkbox{
+            display: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Small (sm) */
+@media (min-width: 640px) {
+    nav {
+        display: block;
+    }
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    header label {
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+    }
+    /* Your styles for the medium breakpoint here */
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}
     </style>
 </head>
 <body>
     <header>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox">❤️</label>
+
         <nav>
             <ul>
                 <li>
@@ -25,6 +102,22 @@
     </header>
     <main>
         <h1>Responsive menu </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam quaerat doloremque exercitationem laudantium minima fugit corporis rem animi eveniet perferendis minus facere id nobis ut hic vel natus quas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto? Repellat asperiores error maiores cupiditate molestiae odit unde voluptatibus consectetur nisi sunt. Vel quod officiis voluptatibus at optio quisquam nobis!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam quaerat doloremque exercitationem laudantium minima fugit corporis rem animi eveniet perferendis minus facere id nobis ut hic vel natus quas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto? Repellat asperiores error maiores cupiditate molestiae odit unde voluptatibus consectetur nisi sunt. Vel quod officiis voluptatibus at optio quisquam nobis!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam quaerat doloremque exercitationem laudantium minima fugit corporis rem animi eveniet perferendis minus facere id nobis ut hic vel natus quas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto? Repellat asperiores error maiores cupiditate molestiae odit unde voluptatibus consectetur nisi sunt. Vel quod officiis voluptatibus at optio quisquam nobis!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam quaerat doloremque exercitationem laudantium minima fugit corporis rem animi eveniet perferendis minus facere id nobis ut hic vel natus quas!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto? Repellat asperiores error maiores cupiditate molestiae odit unde voluptatibus consectetur nisi sunt. Vel quod officiis voluptatibus at optio quisquam nobis!
+        </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam quaerat doloremque exercitationem laudantium minima fugit corporis rem animi eveniet perferendis minus facere id nobis ut hic vel natus quas!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iusto? Repellat asperiores error maiores cupiditate molestiae odit unde voluptatibus consectetur nisi sunt. Vel quod officiis voluptatibus at optio quisquam nobis!
