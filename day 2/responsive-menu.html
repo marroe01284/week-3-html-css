@@ -3,26 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>::Responsive Menu::</title>
+    
     <style>
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+    margin: 0;
+    position: relative;
+}
+
 header {
     background-color: black;
-    border-radius: 8px;
     position: sticky;
     top: 0;
-    
+
 }
         nav {
             display: none;
             background-color: black;
-            border-radius: 8px;
+            position: static;
+            top: initial;
+            width:initial;
+            left: initial;
+            padding-left: 8px;
+            height: auto;
+
         }
         nav li {
-            padding: 8px 0;
+            padding: 16px 0;
         }
         nav li a:hover {
             text-decoration: underline;
