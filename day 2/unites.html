@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unites</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .some-parent{
+            width: 200px;
+            border: 1px solid black;
+            height: 500px;
+        }
+
+        .item {
+            background-color: green;
+        }
+        /* percent will take the precent of the parent */
+        .item-percent {
+            width: 50%;
+            height: 50%;
+        }
+/* vw= view width, vh= view height it takes the whole page instead og inside the container */
+        .item-view-width {
+            width: 50vw;
+            height: 50vh;
+        }
+        /* REM will take the root witch is 14px font size. why use it? rem will scale to diffrent sizes of the screen */
+        .p-rem {
+            font-size: 3rem;
+        }
+
+        .parent {
+            font-size: 20px;
+        }
+/*  the em will take the font size from the parent witch now is 20 px  */
+        .p-em {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="some-parent">
+    <div class="item item-percent">percentage</div>
+    <div class="item item-view-width">item view width</div> -->
+    <div class="parent">
+        <div class="item p-rem"> some p using rem</div>
+        <div class="item p-em"> some p using em</div>
+</body>
+</html>
