@@ -7,13 +7,35 @@
     * {
         box-sizing: border-box;
     }
+
+    .div-1{
+        background-color: red;
+    }
+/* display inline block will overrite display inline, witch means u can edit the height and width */
+    .span-1 {
+        background-color: green;
+        display: inline-block;
+        width: 150px;
+    }
+
+    .span-2 {
+        background-color: aquamarine;
+        width: 200px;
+        /* display: inline-block; */
+    }
+/* if you dont want an elemtent to show on your website use display none */
+    .div-2{
+        background-color: blueviolet;
+        display: none;
+    }
 </style>
 </head>
 <body>
+    <!-- diffrence between div and span, div has default display block, span has a default display inline -->
     <div class="div-1">I am a Div</div>
     <span class="span-1">I am a Span</span>
     <button class="button-1">Iam a button</button>
-    <span class="span-2">I am a span 2</span>
-    <div class="div-2">I am a div 2</div>
+    <span class="span-2">I am a Span 2</span>
+    <div class="div-2">I am a Div 2</div>
 </body>
 </html>
