@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::MODAL::</title>
+    <script src="https://kit.fontawesome.com/156d4e89cb.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+        }
+
+        body {
+            background-color: #555;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .modal {
+            height: 80vh;
+            background-color: white;
+            width: 900px;
+            max-width: 80%;
+            margin: auto;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem .5rem 1rem;
+            border-bottom: 1px solid #777;
+        }
+        
+        .modal-header .title {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+        }
+        
+        .modal-header .close-button {
+            border: none;
+            background: none;
+            font-size: 1.5rem;
+            align-self: flex-start;
+            padding-top: .5rem;
+            cursor: pointer;
+            
+        }
+        
+        .modal-body {
+            padding: 1rem;
+            overflow: auto;
+            flex-grow: 1;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            border-top: 1px solid #777;
+            padding-top: .5rem;
+            gap: .5rem;
+        }
+
+        /* .modal-footer .btn {
+            /* margin-right: .5rem; */
+        /* } */
+      .btn {
+        padding: .5rem 1rem;
+        border: none;
+        cursor: pointer;
+        color: white;
+        border-radius: .5rem;
+        font-weight: bold;
+        font-size: inherit;
+        
+      }
+
+      .btn-primary {
+        background-color: #1ca;
+      }
+
+      .btn-primary:hover, .btn-primary:focus {
+        background-color: #0a8;
+      }
+
+      .btn-danger {
+        background-color: #c33;
+      }
+
+      .btn-danger:hover, .btn-danger:focus {
+        background-color: #a11;
+      }
+
+    </style>
+</head>
+<body>
+    <!-- MODAL CONTANER -->
+    <div class="modal">
+
+<!-- MODAL HEADER -->
+   <div class="modal-header">
+    <span class="title">Title</span>
+    <button class="close-button">
+        <i class="fa-regular fa-circle-xmark"></i>
+    </button>
+   </div>
+
+   <!-- MODAL BODY -->
+   <div class="modal-body">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad voluptas perspiciatis? Tempora animi aspernatur quasi eius unde accusantium eveniet exercitationem voluptatem nobis consequuntur! Vitae recusandae aliquid numquam earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolorum, nihil accusamus cum obcaecati repellat sapiente deserunt quidem, quaerat eum molestias illo at reiciendis, dicta vitae tempore ab explicabo minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur consequatur incidunt eum architecto quod possimus amet, asperiores voluptatem nesciunt commodi, assumenda sit? Eligendi fuga id minus quo, ad facere.
+   </div>
+<!-- MODAL FOOTER -->
+   <div class="modal-footer">
+    <button class="btn btn-primary">Ok</button>
+    <button class="btn btn-danger">Cancel</button>
+   </div>
+</div>
+</body>
+</html>
